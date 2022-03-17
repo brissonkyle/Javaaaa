@@ -1,11 +1,12 @@
 var userAge = 18
-console.log('User is old enough');
 
-var is_subscribed = 'user is a sub'
+is_subscribed = false
 
-if (userAge >= 18) {
-    console.log('User is old enough');
-} else if (is_subscribed) {
-    console.log('Is a sub and old enough');
-}
-
+if (userAge < 18 && (is_subscribed = false)) {
+    console.log ('User is under 18 and not a sub');
+} else if (userAge >= 18 && (is_subscribed = false)) {
+    console.log('User is over 18 and is not a sub');
+} else if (userAge < 18 && (is_subscribed = true)) {
+    console.log('User is under 18 and is a sub');
+} else (userAge >= 18 && (is_subscribed = true));
+    console.log('User is over 18 and is sub');
